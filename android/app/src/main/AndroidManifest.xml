@@ -4,6 +4,7 @@
 
     <application
       android:name=".MainApplication"
+      android:enableOnBackInvokedCallback="false"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
@@ -11,6 +12,14 @@
       android:theme="@style/AppTheme"
       android:usesCleartextTraffic="${usesCleartextTraffic}"
       android:supportsRtl="true">
+      <activity
+        android:name=".NativeExampleActivity"
+        android:theme="@style/AppTheme"
+        android:exported="false" />
+      <activity
+        android:name=".NativeComposeActivity"
+        android:theme="@style/AppTheme"
+        android:exported="false" />
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

@@ -11,6 +11,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3FD428E113BF2DD2B13A3C93 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		761780F12CA45674006654F1 /* NativeExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780F02CA45674006654F0 /* NativeExampleViewController.swift */; };
+		761780F32CA45674006654F3 /* NativeScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780F22CA45674006654F2 /* NativeScreenModule.swift */; };
+		761780F72CA45674006654F7 /* NativeExampleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780F62CA45674006654F6 /* NativeExampleSwiftUIView.swift */; };
+		761780F52CA45674006654F5 /* NativeScreenModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 761780F42CA45674006654F4 /* NativeScreenModule.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-NativeScreens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeScreens.release.xcconfig"; path = "Target Support Files/Pods-NativeScreens/Pods-NativeScreens.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-NativeScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeScreens.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = NativeScreens/AppDelegate.swift; sourceTree = "<group>"; };
+		761780F02CA45674006654F0 /* NativeExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeExampleViewController.swift; path = NativeScreens/NativeExampleViewController.swift; sourceTree = "<group>"; };
+		761780F22CA45674006654F2 /* NativeScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeScreenModule.swift; path = NativeScreens/NativeScreenModule.swift; sourceTree = "<group>"; };
+		761780F62CA45674006654F6 /* NativeExampleSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeExampleSwiftUIView.swift; path = NativeScreens/NativeExampleSwiftUIView.swift; sourceTree = "<group>"; };
+		761780F42CA45674006654F4 /* NativeScreenModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NativeScreenModule.m; path = NativeScreens/NativeScreenModule.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NativeScreens/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -44,6 +52,10 @@
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				761780F02CA45674006654F0 /* NativeExampleViewController.swift */,
+				761780F22CA45674006654F2 /* NativeScreenModule.swift */,
+				761780F62CA45674006654F6 /* NativeExampleSwiftUIView.swift */,
+				761780F42CA45674006654F4 /* NativeScreenModule.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
@@ -247,6 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				761780F12CA45674006654F1 /* NativeExampleViewController.swift in Sources */,
+				761780F32CA45674006654F3 /* NativeScreenModule.swift in Sources */,
+				761780F72CA45674006654F7 /* NativeExampleSwiftUIView.swift in Sources */,
+				761780F52CA45674006654F5 /* NativeScreenModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "org.jetbrains.kotlin.plugin.compose"
 apply plugin: "com.facebook.react"
 
 /**
@@ -78,6 +79,9 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.nativescreens"
+    buildFeatures {
+        compose true
+    }
     defaultConfig {
         applicationId "com.nativescreens"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -116,4 +120,11 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    // Jetpack Compose
+    def composeBom = platform("androidx.compose:compose-bom:2024.06.00")
+    implementation composeBom
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.material3:material3"
+    implementation "androidx.activity:activity-compose:1.9.3"
 }

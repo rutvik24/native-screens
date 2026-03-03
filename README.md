@@ -1,5 +1,7 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+This project uses [**bun**](https://bun.sh) for package management and scripts. Install dependencies with `bun install`.
+
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
@@ -11,11 +13,7 @@ First, you will need to run **Metro**, the JavaScript build tool for React Nativ
 To start the Metro dev server, run the following command from the root of your React Native project:
 
 ```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+bun start
 ```
 
 ## Step 2: Build and run your app
@@ -25,11 +23,7 @@ With Metro running, open a new terminal window/pane from the root of your React 
 ### Android
 
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+bun run android
 ```
 
 ### iOS
@@ -50,12 +44,14 @@ bundle exec pod install
 
 For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
-```sh
-# Using npm
-npm run ios
+You can also install pods with bun:
 
-# OR using Yarn
-yarn ios
+```sh
+bunx pod-install ios
+```
+
+```sh
+bun run ios
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
